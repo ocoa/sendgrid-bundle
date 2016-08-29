@@ -10,4 +10,68 @@ namespace SendgridBundle\Entity\Definition;
  *
  */
 trait AuthDefinition
-{}
+{    
+
+
+	private $bearer;    
+
+
+	private $subDomain;    
+
+
+	private $endPoint;    
+
+
+	private $version;    
+
+	public function setBearer($bearer)
+	{
+		$this->bearer = $bearer;
+		
+		return $this;
+	}
+	
+	public function getBearer()
+	{
+		return $this->bearer;
+	}
+    
+
+	public function setSubDomain($subDomain)
+	{
+		$this->subDomain = $subDomain;
+		
+		return $this;
+	}
+	
+	public function getSubDomain()
+	{
+		return $this->subDomain;
+	}
+    
+
+	public function setEndPoint($endPoint)
+	{
+		$this->endPoint = $endPoint;
+		
+		return $this;
+	}
+	
+	public function getEndPoint()
+	{
+		return $this->endPoint;
+	}
+    
+
+	public function setVersion($version)
+	{
+		$this->version = $version;
+		
+		return $this;
+	}
+	
+	public function getVersion()
+	{
+		return $this->version;
+	}
+}
