@@ -12,34 +12,72 @@ namespace SendgridBundle\Entity\Definition;
 trait BounceDefinition
 {    
 
+	 /**
+	 * @var datetime
+	 *
+	 
+	 */
+	
+	private $startTime;
+	
+    
 
-	private $startTime;    
+	 /**
+	 * @var datetime
+	 *
+	 
+	 */
+	
+	private $endTime;
+	
+    
 
+	
+	/**
+	 * Get startTime
+	 *
+	 * @return datetime
+	 */
+	public function getStartTime()
+	{
+		return $this->startTime;
+	}
 
-	private $endTime;    
-
+	/**
+	 * Set startTime
+	 *
+	 * @param  datetime $startTime
+	 * @return Bounce
+	 */
 	public function setStartTime($startTime)
 	{
 		$this->startTime = $startTime;
 		
 		return $this;
-	}
-	
-	public function getStartTime()
-	{
-		return $this->startTime;
-	}
+	}	
     
 
+	
+	/**
+	 * Get endTime
+	 *
+	 * @return datetime
+	 */
+	public function getEndTime()
+	{
+		return $this->endTime;
+	}
+
+	/**
+	 * Set endTime
+	 *
+	 * @param  datetime $endTime
+	 * @return Bounce
+	 */
 	public function setEndTime($endTime)
 	{
 		$this->endTime = $endTime;
 		
 		return $this;
-	}
-	
-	public function getEndTime()
-	{
-		return $this->endTime;
-	}
+	}	
 }

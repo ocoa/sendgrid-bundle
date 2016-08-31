@@ -12,50 +12,107 @@ namespace SendgridBundle\Entity\Definition;
 trait SubUserDefinition
 {    
 
+	 /**
+	 * @var integer
+	 *
+	 
+	 */
+	
+	private $limit;
+	
+    
 
-	private $limit;    
+	 /**
+	 * @var integer
+	 *
+	 
+	 */
+	
+	private $offset;
+	
+    
 
+	 /**
+	 * @var string
+	 *
+	 
+	 */
+	
+	private $username;
+	
+    
 
-	private $offset;    
+	
+	/**
+	 * Get limit
+	 *
+	 * @return integer
+	 */
+	public function getLimit()
+	{
+		return $this->limit;
+	}
 
-
-	private $username;    
-
+	/**
+	 * Set limit
+	 *
+	 * @param  integer $limit
+	 * @return SubUser
+	 */
 	public function setLimit($limit)
 	{
 		$this->limit = $limit;
 		
 		return $this;
-	}
-	
-	public function getLimit()
-	{
-		return $this->limit;
-	}
+	}	
     
 
+	
+	/**
+	 * Get offset
+	 *
+	 * @return integer
+	 */
+	public function getOffset()
+	{
+		return $this->offset;
+	}
+
+	/**
+	 * Set offset
+	 *
+	 * @param  integer $offset
+	 * @return SubUser
+	 */
 	public function setOffset($offset)
 	{
 		$this->offset = $offset;
 		
 		return $this;
-	}
-	
-	public function getOffset()
-	{
-		return $this->offset;
-	}
+	}	
     
 
+	
+	/**
+	 * Get username
+	 *
+	 * @return string
+	 */
+	public function getUsername()
+	{
+		return $this->username;
+	}
+
+	/**
+	 * Set username
+	 *
+	 * @param  string $username
+	 * @return SubUser
+	 */
 	public function setUsername($username)
 	{
 		$this->username = $username;
 		
 		return $this;
-	}
-	
-	public function getUsername()
-	{
-		return $this->username;
-	}
+	}	
 }

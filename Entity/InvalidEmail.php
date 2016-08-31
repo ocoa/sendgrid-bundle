@@ -6,11 +6,11 @@
 namespace SendgridBundle\Entity;
 
 /**
- * "InvalidEmail" connector object
+ * "InvalidEsend" connector object
  */
-require_once __DIR__.'/Definition/InvalidEmailDefinition.php';
-class InvalidEmail extends Connector
+require_once __DIR__.'/Definition/InvalidEsendDefinition.php';
+class InvalidEsend extends Connector
 {
-	use Definition\InvalidEmailDefinition;
+	use Definition\InvalidEsendDefinition;
 }
 

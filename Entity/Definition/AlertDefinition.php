@@ -12,66 +12,142 @@ namespace SendgridBundle\Entity\Definition;
 trait AlertDefinition
 {    
 
+	 /**
+	 * @var string
+	 *
+	 
+	 */
+	
+	private $type;
+	
+    
 
-	private $type;    
+	 /**
+	 * @var string
+	 *
+	 
+	 */
+	
+	private $emailTo;
+	
+    
 
+	 /**
+	 * @var integer
+	 *
+	 
+	 */
+	
+	private $percentage;
+	
+    
 
-	private $emailTo;    
+	 /**
+	 * @var string
+	 *
+	 
+	 */
+	
+	private $frequency;
+	
+    
 
+	
+	/**
+	 * Get type
+	 *
+	 * @return string
+	 */
+	public function getType()
+	{
+		return $this->type;
+	}
 
-	private $percentage;    
-
-
-	private $frequency;    
-
+	/**
+	 * Set type
+	 *
+	 * @param  string $type
+	 * @return Alert
+	 */
 	public function setType($type)
 	{
 		$this->type = $type;
 		
 		return $this;
-	}
-	
-	public function getType()
-	{
-		return $this->type;
-	}
+	}	
     
 
+	
+	/**
+	 * Get emailTo
+	 *
+	 * @return string
+	 */
+	public function getEmailTo()
+	{
+		return $this->emailTo;
+	}
+
+	/**
+	 * Set emailTo
+	 *
+	 * @param  string $emailTo
+	 * @return Alert
+	 */
 	public function setEmailTo($emailTo)
 	{
 		$this->emailTo = $emailTo;
 		
 		return $this;
-	}
-	
-	public function getEmailTo()
-	{
-		return $this->emailTo;
-	}
+	}	
     
 
+	
+	/**
+	 * Get percentage
+	 *
+	 * @return integer
+	 */
+	public function getPercentage()
+	{
+		return $this->percentage;
+	}
+
+	/**
+	 * Set percentage
+	 *
+	 * @param  integer $percentage
+	 * @return Alert
+	 */
 	public function setPercentage($percentage)
 	{
 		$this->percentage = $percentage;
 		
 		return $this;
-	}
-	
-	public function getPercentage()
-	{
-		return $this->percentage;
-	}
+	}	
     
 
+	
+	/**
+	 * Get frequency
+	 *
+	 * @return string
+	 */
+	public function getFrequency()
+	{
+		return $this->frequency;
+	}
+
+	/**
+	 * Set frequency
+	 *
+	 * @param  string $frequency
+	 * @return Alert
+	 */
 	public function setFrequency($frequency)
 	{
 		$this->frequency = $frequency;
 		
 		return $this;
-	}
-	
-	public function getFrequency()
-	{
-		return $this->frequency;
-	}
+	}	
 }
